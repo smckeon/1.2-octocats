@@ -58,21 +58,24 @@ img {
   color: grey;
 }
 
-.image-number:before {
+.image-number::before {
   content: "#";
 }
 
-.image-footer:before {
+.octocat a {
+  position: relative;
+}
+
+.octocat > a::after {
     content: "";
-    display: inline;
+    display: block;
     height: 0;
     width: 0;
     border: 8px solid transparent;
     border-top-color: #cacaca;
     position: absolute;
-    right: 30px;
-    left: 402px;
-    top: 435px;
+    right: 0
+    bottom: 8px;
 }
 
 .image-number {
